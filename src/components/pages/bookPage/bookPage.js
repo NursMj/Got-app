@@ -11,7 +11,7 @@ export default class BookPage extends Component {
   gotService = new gotService();
 
   state = { 
-    selectedBook: 130,
+    selectedBook: 2,
     error: false
   }
 
@@ -43,10 +43,9 @@ export default class BookPage extends Component {
       <ItemDetails 
         itemId={this.state.selectedBook}
         itemType='book'>
-        <Field field='gender' label='book'/>
-        <Field field='born' label='Born'/>
-        <Field field='died' label='Died'/>
-        <Field field='culture' label='Culture'/>
+        <Field field='numberOfPages' label='Number of pages'/>
+        <Field field='publiser' label='Publiser'/>
+        <Field field='released' label='Released'/>
       </ItemDetails>
     );
 

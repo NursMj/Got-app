@@ -53,19 +53,19 @@ export default class ItemDetails extends Component {
         }
 
         switch (itemType) {
-            case itemType === 'book': 
+            case 'book': 
                 this.gotService.getBook(itemId)
                 .then((item) => {
                     this.setState({item})
                 });
                 break;
-            case itemType === 'char': 
+            case 'char': 
                 this.gotService.getCharacter(itemId)
                 .then((item) => {
                     this.setState({item})
                 });
                 break;
-            case itemType === 'house': 
+            case 'house': 
                 this.gotService.getHouse(itemId)
                 .then((item) => {
                     this.setState({item})

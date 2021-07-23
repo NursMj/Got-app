@@ -43,10 +43,11 @@ export default class HousePage extends Component {
       <ItemDetails 
         itemId={this.state.selectedHouse}
         itemType='house'>
-        <Field field='gender' label='house'/>
-        <Field field='born' label='Born'/>
-        <Field field='died' label='Died'/>
-        <Field field='culture' label='Culture'/>
+        <Field field='region' label='Region'/>
+        <Field field='words' label='Words'/>
+        <Field field='title' label='Title'/>
+        <Field field='overlord' label='Overlord'/>
+        <Field field='ancestralWeappons' label='Ancestral weappons'/>
       </ItemDetails>
     );
 
