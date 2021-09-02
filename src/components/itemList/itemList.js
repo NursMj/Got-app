@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Spinner from '../spinner';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
+
 
 const ListGroup = styled.ul`
     cursor: pointer;
@@ -58,4 +60,12 @@ export default class ItemList extends Component {
             </ListGroup>
         );
     }
+}
+
+ItemList.defaultProps = {
+    onItemSelected: () => {}
+}
+
+ItemList.propTypes = {
+    onItemSelected: PropTypes.func
 }
